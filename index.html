@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Swaraj Kadambala</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet" />
 </head>
 <body>
     <header>
-        <h1>Swaraj Kadambala</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1>Swaraj Kadambala</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="about">
+    <main class="container">
+        <section id="about" class="card">
             <h2>About Me</h2>
             <p>
-                I'm a student at the University of Illinois Urbana-Champaign pursuing a B.S. in Mathematics, Computer Science, and Economics (GPA: 3.76/4.00). 
-                I'm passionate about optimization, programming, and applying quantitative methods to solve real-world problems.
+                I'm a student at the University of Illinois Urbana-Champaign pursuing a B.S. in Mathematics, Computer Science, and Economics (GPA: 3.76/4.00).
+                I'm passionate about optimization, programming, and using quantitative methods to solve real-world problems.
             </p>
         </section>
 
-        <section id="projects">
+        <section id="projects" class="card">
             <h2>Projects</h2>
 
             <div class="project">
-                <h3>Climate-Aware Flight Path Optimizer</h3>
-                <p><strong>Tools:</strong> Python, Streamlit, Numerical Optimization</p>
+                <h3>🌍 Climate-Aware Flight Path Optimizer</h3>
+                <p><strong>Tech:</strong> Python, Streamlit, Numerical Optimization</p>
                 <ul>
-                    <li>Reduced contrail formation by 25% using Newton-Raphson optimization and real-time atmospheric data analysis.</li>
-                    <li>Modeled aircraft dynamics and humidity thresholds (RHi) to optimize environmental and fuel trade-offs.</li>
-                    <li>Built a Streamlit dashboard to visualize path, cost, and climate impact.</li>
+                    <li>Reduced contrail formation by 25% using Newton-Raphson optimization and atmospheric data.</li>
+                    <li>Modeled aircraft dynamics and RHi thresholds to balance fuel vs. environmental impact.</li>
+                    <li>Built a dynamic Streamlit dashboard for decision-making.</li>
                 </ul>
             </div>
 
             <div class="project">
-                <h3>Miniature Marketplace Application</h3>
-                <p><strong>Tools:</strong> Java, Swing, Concurrency</p>
+                <h3>🛒 Miniature Marketplace App</h3>
+                <p><strong>Tech:</strong> Java, Swing, Concurrency</p>
                 <ul>
-                    <li>Developed a client-server desktop application simulating a marketplace with real-time updates.</li>
-                    <li>Implemented concurrency to manage simultaneous user interactions.</li>
+                    <li>Created a client-server architecture marketplace desktop app.</li>
+                    <li>Enabled concurrent communication and real-time updates.</li>
                 </ul>
             </div>
         </section>
 
-        <section id="skills">
+        <section id="skills" class="card">
             <h2>Skills</h2>
-            <ul>
-                <li><strong>Programming:</strong> Python (NumPy, Pandas, Matplotlib), C/C++, Java</li>
-                <li><strong>Financial:</strong> Options Theory, Market Microstructure</li>
-                <li><strong>Tools:</strong> TensorFlow, Streamlit, Git</li>
+            <ul class="skills-list">
+                <li><strong>Programming:</strong> Python (NumPy, Pandas), C/C++, Java</li>
+                <li><strong>Finance:</strong> Options Theory, Market Microstructure</li>
+                <li><strong>Tools:</strong> Streamlit, TensorFlow, Git</li>
             </ul>
         </section>
 
-        <section id="contact">
+        <section id="contact" class="card">
             <h2>Contact</h2>
             <p>Email: <a href="mailto:swarajk2@illinois.edu">swarajk2@illinois.edu</a></p>
             <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">My Profile</a></p>
