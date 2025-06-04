@@ -23,34 +23,38 @@
     </header>
 
     <main class="container">
-        <section id="about" class="card">
-            <h2>About Me</h2>
-            <p>
-                I'm a student at the University of Illinois Urbana-Champaign pursuing a B.S. in Mathematics, Computer Science, and Economics (GPA: 3.76/4.00).
-                I'm passionate about optimization, programming, and using quantitative methods to solve real-world problems.
-            </p>
+        <section id="about" class="card profile">
+            <img src="https://via.placeholder.com/120" alt="Profile Photo" class="profile-pic">
+            <div>
+                <h2>About Me</h2>
+                <p>
+                    I'm a student at the University of Illinois Urbana–Champaign pursuing a B.S. in Mathematics, Computer Science, and Economics (GPA: 3.76).
+                    I'm passionate about optimization, programming, and applying quantitative methods to solve real-world problems.
+                </p>
+            </div>
         </section>
 
         <section id="projects" class="card">
             <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project">
+                    <h3>🌍 Climate-Aware Flight Path Optimizer</h3>
+                    <p><strong>Tech:</strong> Python, Streamlit, Numerical Optimization</p>
+                    <ul>
+                        <li>Reduced contrail formation by 25% using Newton-Raphson optimization and real-time RHi data.</li>
+                        <li>Modeled aircraft dynamics and environmental thresholds.</li>
+                        <li>Built a Streamlit dashboard to visualize trade-offs.</li>
+                    </ul>
+                </div>
 
-            <div class="project">
-                <h3>🌍 Climate-Aware Flight Path Optimizer</h3>
-                <p><strong>Tech:</strong> Python, Streamlit, Numerical Optimization</p>
-                <ul>
-                    <li>Reduced contrail formation by 25% using Newton-Raphson optimization and atmospheric data.</li>
-                    <li>Modeled aircraft dynamics and RHi thresholds to balance fuel vs. environmental impact.</li>
-                    <li>Built a dynamic Streamlit dashboard for decision-making.</li>
-                </ul>
-            </div>
-
-            <div class="project">
-                <h3>🛒 Miniature Marketplace App</h3>
-                <p><strong>Tech:</strong> Java, Swing, Concurrency</p>
-                <ul>
-                    <li>Created a client-server architecture marketplace desktop app.</li>
-                    <li>Enabled concurrent communication and real-time updates.</li>
-                </ul>
+                <div class="project">
+                    <h3>🛒 Miniature Marketplace App</h3>
+                    <p><strong>Tech:</strong> Java, Swing, Concurrency</p>
+                    <ul>
+                        <li>Built a desktop marketplace app with client-server architecture.</li>
+                        <li>Enabled concurrent communication and real-time updates.</li>
+                    </ul>
+                </div>
             </div>
         </section>
 
