@@ -1,57 +1,80 @@
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    background-color: #f5f5f5;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f6f9;
     color: #333;
 }
 
 header {
-    background-color: #2c3e50;
+    background: linear-gradient(to right, #2c3e50, #4ca1af);
     color: white;
-    padding: 1.5rem;
-    text-align: center;
+    padding: 1.5rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
 }
 
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2rem;
+    gap: 1.5rem;
+    padding: 0;
     margin-top: 1rem;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    transition: color 0.3s ease;
 }
 
-main {
-    padding: 2rem;
-    max-width: 800px;
+nav a:hover {
+    color: #ffd700;
+}
+
+.container {
+    max-width: 900px;
     margin: auto;
+    padding: 2rem 1rem;
 }
 
-h2 {
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.project h3 {
+    margin-top: 0.5rem;
     color: #2c3e50;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 0.3rem;
 }
 
-.project {
-    background-color: #fff;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 8px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+.skills-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.skills-list li {
+    margin-bottom: 0.8rem;
 }
 
 footer {
-    background-color: #2c3e50;
-    color: white;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
+    background: #2c3e50;
+    color: white;
+    font-size: 0.9rem;
 }
