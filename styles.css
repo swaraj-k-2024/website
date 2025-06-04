@@ -1,80 +1,100 @@
-body {
+/* Reset and base */
+* {
     margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: #f4f6f9;
-    color: #333;
-}
-
-header {
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
-    color: white;
-    padding: 1.5rem 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-header .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 0 1rem;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
     padding: 0;
-    margin-top: 1rem;
+    box-sizing: border-box;
 }
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
+body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #f9f9f9;
+    line-height: 1.6;
 }
-
-nav a:hover {
-    color: #ffd700;
-}
-
 .container {
-    max-width: 900px;
+    max-width: 1000px;
     margin: auto;
     padding: 2rem 1rem;
 }
 
+/* Header */
+header {
+    background: transparent;
+    padding: 2rem 0 1rem;
+    text-align: center;
+}
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    list-style: none;
+    margin-top: 1rem;
+}
+nav a {
+    color: #f9f9f9;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Cards */
 .card {
-    background: white;
-    padding: 1.5rem;
-    border-radius: 12px;
+    background: #ffffff;
+    color: #333;
+    border-radius: 1rem;
+    padding: 2rem;
     margin-bottom: 2rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
+/* Profile section */
+.profile {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Projects */
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+.project {
+    background: #f0f4f8;
+    padding: 1rem;
+    border-radius: 0.8rem;
+}
 .project h3 {
-    margin-top: 0.5rem;
-    color: #2c3e50;
+    margin-bottom: 0.5rem;
 }
 
+/* Skills */
 .skills-list {
     list-style: none;
     padding-left: 0;
 }
-
 .skills-list li {
     margin-bottom: 0.8rem;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 1rem;
-    background: #2c3e50;
-    color: white;
     font-size: 0.9rem;
+    background: #111;
+    color: #bbb;
 }
