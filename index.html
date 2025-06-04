@@ -3,28 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <title>Swaraj Kadambala</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Personal Website</h1>
+        <h1>Swaraj Kadambala</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section>
-            <p>Hello! This is a simple personal website built with HTML and CSS. Feel free to explore.</p>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                I'm a student at the University of Illinois Urbana-Champaign pursuing a B.S. in Mathematics, Computer Science, and Economics (GPA: 3.76/4.00). 
+                I'm passionate about optimization, programming, and applying quantitative methods to solve real-world problems.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Climate-Aware Flight Path Optimizer</h3>
+                <p><strong>Tools:</strong> Python, Streamlit, Numerical Optimization</p>
+                <ul>
+                    <li>Reduced contrail formation by 25% using Newton-Raphson optimization and real-time atmospheric data analysis.</li>
+                    <li>Modeled aircraft dynamics and humidity thresholds (RHi) to optimize environmental and fuel trade-offs.</li>
+                    <li>Built a Streamlit dashboard to visualize path, cost, and climate impact.</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Miniature Marketplace Application</h3>
+                <p><strong>Tools:</strong> Java, Swing, Concurrency</p>
+                <ul>
+                    <li>Developed a client-server desktop application simulating a marketplace with real-time updates.</li>
+                    <li>Implemented concurrency to manage simultaneous user interactions.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python (NumPy, Pandas, Matplotlib), C/C++, Java</li>
+                <li><strong>Financial:</strong> Options Theory, Market Microstructure</li>
+                <li><strong>Tools:</strong> TensorFlow, Streamlit, Git</li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:swarajk2@illinois.edu">swarajk2@illinois.edu</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/YOUR_USERNAME" target="_blank">My Profile</a></p>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2023 My Personal Website</p>
+        <p>&copy; 2025 Swaraj Kadambala</p>
     </footer>
 </body>
 </html>
